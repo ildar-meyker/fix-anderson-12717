@@ -11,7 +11,7 @@
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
-	unicode-range: U+0020-00FE;
+	unicode-range: U+0020-04F9;
 }
 
 @font-face {
@@ -29,40 +29,93 @@
 }
 
 .halloween-2021 {
+	max-width: 1500px;
+	margin: 0 auto;
 	font-family: "LeOsler Rough Reg", sans-serif;
-	background: #000;
+	line-height: 1;
+	background: #000 url(../images/halloween-2021/details-bg.png);
+	background-size: 100% auto;
+
+	img {
+		max-width: 100%;
+	}
+
+	a:after {
+		display: none;
+	}
 
 	&__center {
-		max-width: 1560px;
-		margin: 0 auto;
+		padding: 0 15px;
 	}
 
 	&__btn-simple {
 		display: inline-block;
-		padding: 6px 30px;
+		padding: 6/20 + em 30/20 + em 10/20 + em 30/20 + em;
 		border: 2px solid #fff;
 		border-radius: 15px;
 		font-size: 20px;
+		text-align: center;
 		color: #fff;
-
-		&:after {
-			display: none;
-		}
 	}
 
 	&__btn-green {
+		display: inline-block;
+		padding: 13/26 + em 30/26 + em 18/26 + em 30/26 + em;
+		background: url(../images/halloween-2021/btn-bg.png) no-repeat;
+		background-size: 100% 100%;
+		font-size: 26px;
+		text-align: center;
+		color: #fff;
 	}
 
 	&-header {
 		position: relative;
-		height: calc(100vh - 55px);
-		background: url(../images/halloween-2021/header.jpeg) no-repeat 38% 0;
-		background-size: auto 90%;
+		height: 450px;
+		background: url(../images/halloween-2021/header.jpeg) no-repeat 37% -40px;
+		background-size: auto 100%;
 
 		&__date {
+			position: absolute;
+			top: 0;
+			left: 15px;
+			padding: 0.2em 15px 0.8em 15px;
+			background: url(../images/halloween-2021/date-bg.png) no-repeat;
+			background-size: 100% 100%;
+			font-family: "Summer Font";
+			font-size: 40px;
+			color: #fff;
 		}
 
 		&__title {
+			right: 15px;
+			top: 20px;
+			position: absolute;
+			font-size: 29px;
+			text-align: center;
+			color: #fff;
+
+			span {
+				display: block;
+
+				&:nth-child(1) {
+					font-size: 29/29 + em;
+				}
+				&:nth-child(2) {
+					font-family: "Summer Font";
+					font-size: 46/29 + em;
+					line-height: 0.6;
+					padding-bottom: 0.1em;
+					color: #97d700;
+				}
+
+				&:nth-child(3) {
+					font-size: 31/29 + em;
+				}
+
+				&:nth-child(4) {
+					font-size: 33/29 + em;
+				}
+			}
 		}
 
 		&__desc {
@@ -71,6 +124,8 @@
 			left: 0;
 			width: 100%;
 			text-align: center;
+			padding: 10px 0;
+			background: linear-gradient(rgba(#000, 0), #000 50%);
 
 			&__text {
 				font-size: 30px;
@@ -78,70 +133,217 @@
 			}
 
 			&__btn {
+				margin-top: 12px;
 			}
 		}
 	}
 
 	&-flashmob {
+		margin: 30px 0;
+
 		&__title {
+			font-size: 34px;
+			color: #fff;
+
+			span {
+				display: block;
+
+				&:nth-child(2) {
+					color: #91d500;
+				}
+			}
 		}
 
 		&__row {
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
 		}
 
 		&__col-title {
+			flex: 0 0 auto;
+			width: 45%;
 		}
 
 		&__col-ghost {
+			flex: 0 0 auto;
+			width: 55%;
 		}
 
 		&__col-desc {
+			margin-top: 20px;
+			flex: 0 0 auto;
+			width: 100%;
 		}
 
 		&__title-2 {
+			font-size: 38px;
+
+			span {
+				display: block;
+				white-space: nowrap;
+				font-size: 38/38 + em;
+				font-family: "Summer Font";
+				color: #fff;
+
+				&:nth-child(n + 3) {
+					font-size: 50/38 + em;
+					color: #91d500;
+				}
+			}
 		}
 
 		&__desc {
+			font-size: 21px;
+			color: #fff;
 		}
 	}
 
 	&-program {
+		margin: 30px 0;
+
 		&__title {
+			span {
+				display: block;
+				font-size: 38px;
+				color: #fff;
+
+				&:nth-child(1) {
+					color: #89c900;
+				}
+			}
 		}
 
 		&__row {
 		}
 
 		&__col {
+			margin-top: 20px;
+		}
+
+		&__item {
+			display: flex;
+			align-items: center;
+
+			&--flip {
+				flex-direction: row-reverse;
+			}
 		}
 
 		&__image {
+			flex: 0 0 auto;
+			width: 50%;
+
+			&--l {
+				padding-right: 20px;
+			}
+
+			&--r {
+				padding-left: 20px;
+			}
 		}
 
 		&__desc {
+			flex: 0 0 auto;
+			width: 50%;
+			font-size: 34px;
+			line-height: 0.9;
+			color: #91d500;
+
+			span {
+				display: block;
+				white-space: nowrap;
+
+				&:nth-child(1) {
+					padding-bottom: 0.15em;
+				}
+
+				&:nth-child(2) {
+					color: #fff;
+				}
+
+				&:nth-child(n + 2) {
+					font-family: "Summer Font";
+				}
+			}
+
+			&--1 {
+				span {
+					&:nth-child(1) {
+						font-size: 34/34 + em;
+					}
+					&:nth-child(2) {
+						font-size: 50/34 + em;
+					}
+					&:nth-child(3) {
+						font-size: 36/34 + em;
+					}
+				}
+			}
+
+			&--2 {
+				span {
+					&:nth-child(1) {
+						font-size: 40/34 + em;
+					}
+					&:nth-child(2) {
+						font-size: 48/34 + em;
+					}
+					&:nth-child(3) {
+						font-size: 60/34 + em;
+					}
+				}
+			}
 		}
 
-		&__text {
+		&__btn {
+			margin: 15px 15px 0 15px;
+
+			.halloween-2021__btn-green {
+				display: block;
+			}
 		}
 	}
 
 	&-when {
+		margin-top: 70px;
+		padding-bottom: 30px;
+		background: #fff url(../images/halloween-2021/black-curve.png) no-repeat
+			50% 0;
+		background-size: 100% auto;
+
 		&__row {
+			display: flex;
 		}
 
 		&__col-desc {
+			flex: 0 0 auto;
+			width: 50%;
 		}
 
 		&__col-girls {
+			flex: 0 0 auto;
+			align-self: center;
+			width: 50%;
 		}
 
 		&__date {
+			padding-top: 10px;
+			font-size: 20px;
+			font-family: "Summer Font";
+			color: #c30077;
 		}
 
 		&__title {
+			margin-top: 7px;
+			font-size: 21px;
+			color: #c30077;
 		}
 
 		&__poster {
+			margin-top: 15px;
+			padding-right: 20px;
 		}
 	}
 }
