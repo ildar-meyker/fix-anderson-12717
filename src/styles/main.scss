@@ -125,12 +125,12 @@
 			background: linear-gradient(rgba(#000, 0), #000 50%);
 
 			&__text {
+				padding-bottom: 0.5em;
 				font-size: 30px;
 				color: #fff;
 			}
 
 			&__btn {
-				margin-top: 12px;
 			}
 		}
 	}
@@ -182,18 +182,23 @@
 				white-space: nowrap;
 				font-size: 38/38 + em;
 				font-family: "Summer Font";
-				color: #fff;
+				color: #91d500;
 
-				&:nth-child(n + 3) {
+				&:nth-child(n + 4) {
 					font-size: 50/38 + em;
-					color: #91d500;
+					color: #fff;
 				}
 			}
 		}
 
 		&__desc {
-			font-size: 21px;
+			font-size: 20px;
 			color: #fff;
+
+			span {
+				display: block;
+				white-space: nowrap;
+			}
 		}
 	}
 
@@ -376,7 +381,7 @@
 
 			&__title {
 				position: static;
-				padding-top: 40px;
+				padding-top: 1.5em;
 			}
 
 			&__desc {
@@ -516,6 +521,8 @@
 @media (min-width: 1100px) {
 	.halloween-2021 {
 		&__center {
+			padding-right: 3vw;
+			padding-left: 3vw;
 		}
 
 		&__btn-simple {
@@ -531,10 +538,12 @@
 			}
 
 			&__title {
+				font-size: 3vw;
 			}
 
 			&__desc {
 				&__text {
+					font-size: 3vw;
 				}
 
 				&__btn {
@@ -544,6 +553,7 @@
 
 		&-flashmob {
 			&__title {
+				font-size: 4vw;
 			}
 
 			&__row {
