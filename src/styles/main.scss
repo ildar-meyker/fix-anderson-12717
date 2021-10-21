@@ -1,0 +1,147 @@
+@font-face {
+	font-family: "LeOsler Rough Reg";
+	src: url("../fonts/LeOsler-RoughRegular.eot");
+	src: url("../fonts/LeOsler-RoughRegular.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/LeOsler-RoughRegular.woff2") format("woff2"),
+		url("../fonts/LeOsler-RoughRegular.woff") format("woff"),
+		url("../fonts/LeOsler-RoughRegular.ttf") format("truetype"),
+		url("../fonts/LeOsler-RoughRegular.svg#LeOsler-RoughRegular")
+			format("svg");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-00FE;
+}
+
+@font-face {
+	font-family: "Summer Font";
+	src: url("../fonts/Summer Font Bold.eot");
+	src: url("../fonts/Summer Font Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Summer Font Bold.woff2") format("woff2"),
+		url("../fonts/Summer Font Bold.woff") format("woff"),
+		url("../fonts/Summer Font Bold.ttf") format("truetype"),
+		url("../fonts/Summer Font Bold.svg#Summer Font Bold") format("svg");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-2074;
+}
+
+.halloween-2021 {
+	font-family: "LeOsler Rough Reg", sans-serif;
+	background: #000;
+
+	&__center {
+		max-width: 1560px;
+		margin: 0 auto;
+	}
+
+	&__btn-simple {
+		display: inline-block;
+		padding: 6px 30px;
+		border: 2px solid #fff;
+		border-radius: 15px;
+		font-size: 20px;
+		color: #fff;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	&__btn-green {
+	}
+
+	&-header {
+		position: relative;
+		height: calc(100vh - 55px);
+		background: url(../images/halloween-2021/header.jpeg) no-repeat 38% 0;
+		background-size: auto 90%;
+
+		&__date {
+		}
+
+		&__title {
+		}
+
+		&__desc {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			text-align: center;
+
+			&__text {
+				font-size: 30px;
+				color: #fff;
+			}
+
+			&__btn {
+			}
+		}
+	}
+
+	&-flashmob {
+		&__title {
+		}
+
+		&__row {
+		}
+
+		&__col-title {
+		}
+
+		&__col-ghost {
+		}
+
+		&__col-desc {
+		}
+
+		&__title-2 {
+		}
+
+		&__desc {
+		}
+	}
+
+	&-program {
+		&__title {
+		}
+
+		&__row {
+		}
+
+		&__col {
+		}
+
+		&__image {
+		}
+
+		&__desc {
+		}
+
+		&__text {
+		}
+	}
+
+	&-when {
+		&__row {
+		}
+
+		&__col-desc {
+		}
+
+		&__col-girls {
+		}
+
+		&__date {
+		}
+
+		&__title {
+		}
+
+		&__poster {
+		}
+	}
+}
