@@ -29,12 +29,9 @@
 }
 
 .halloween-2021 {
-	max-width: 1500px;
-	margin: 0 auto;
 	font-family: "LeOsler Rough Reg", sans-serif;
 	line-height: 1;
-	background: #000 url(../images/halloween-2021/details-bg.png);
-	background-size: 100% auto;
+	background: #000;
 
 	img {
 		max-width: 100%;
@@ -51,21 +48,21 @@
 	&__btn-simple {
 		display: inline-block;
 		padding: 6/20 + em 30/20 + em 10/20 + em 30/20 + em;
-		border: 2px solid #fff;
+		border: 2px solid #fff !important;
 		border-radius: 15px;
 		font-size: 20px;
 		text-align: center;
-		color: #fff;
+		color: #fff !important;
 	}
 
 	&__btn-green {
-		display: inline-block;
+		display: block;
 		padding: 13/26 + em 30/26 + em 18/26 + em 30/26 + em;
 		background: url(../images/halloween-2021/btn-bg.png) no-repeat;
 		background-size: 100% 100%;
 		font-size: 26px;
 		text-align: center;
-		color: #fff;
+		color: #fff !important;
 	}
 
 	&-header {
@@ -204,9 +201,11 @@
 		margin: 30px 0;
 
 		&__title {
+			font-size: 38px;
+
 			span {
 				display: block;
-				font-size: 38px;
+				font-size: 1em;
 				color: #fff;
 
 				&:nth-child(1) {
@@ -247,6 +246,9 @@
 		&__desc {
 			flex: 0 0 auto;
 			width: 50%;
+		}
+
+		&__text {
 			font-size: 34px;
 			line-height: 0.9;
 			color: #91d500;
@@ -299,10 +301,10 @@
 
 		&__btn {
 			margin: 15px 15px 0 15px;
+		}
 
-			.halloween-2021__btn-green {
-				display: block;
-			}
+		&__btn-inside {
+			display: none;
 		}
 	}
 
@@ -311,7 +313,7 @@
 		padding-bottom: 30px;
 		background: #fff url(../images/halloween-2021/black-curve.png) no-repeat
 			50% 0;
-		background-size: 100% auto;
+		background-size: 105% auto;
 
 		&__row {
 			display: flex;
@@ -339,11 +341,392 @@
 			margin-top: 7px;
 			font-size: 21px;
 			color: #c30077;
+
+			span {
+				display: block;
+			}
 		}
 
 		&__poster {
 			margin-top: 15px;
 			padding-right: 20px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.halloween-2021 {
+		&__center {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		&__btn-simple {
+		}
+
+		&__btn-green {
+		}
+
+		&-header {
+			height: 550px;
+			background-position: 50% 0;
+
+			&__date {
+			}
+
+			&__title {
+				position: static;
+				padding-top: 40px;
+			}
+
+			&__desc {
+				&__text {
+				}
+
+				&__btn {
+				}
+			}
+		}
+
+		&-flashmob {
+			margin: 70px 0;
+
+			&__title {
+				font-size: 40px;
+			}
+
+			&__row {
+			}
+
+			&__col-title {
+				width: 25%;
+			}
+
+			&__col-ghost {
+				width: 35%;
+			}
+
+			&__col-desc {
+				width: 40%;
+			}
+
+			&__title-2 {
+			}
+
+			&__desc {
+			}
+		}
+
+		&-program {
+			margin: 70px 0;
+
+			&__title {
+				font-size: 40px;
+			}
+
+			&__row {
+				display: flex;
+			}
+
+			&__col {
+				flex: 0 0 auto;
+				margin-top: 70px;
+				width: 45%;
+
+				&:last-child {
+					margin-left: 10%;
+				}
+			}
+
+			&__item {
+				align-items: flex-start;
+
+				&--flip {
+					flex-direction: row;
+				}
+			}
+
+			&__image {
+				padding: 0 30px 0 0;
+				width: 40%;
+
+				&--r {
+					margin-top: -70px;
+				}
+			}
+
+			&__desc {
+				width: 60%;
+			}
+
+			&__text {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				min-height: 4em;
+
+				&--1 {
+				}
+
+				&--2 {
+				}
+			}
+
+			&__btn {
+				display: none;
+			}
+
+			&__btn-inside {
+				display: block;
+				margin-top: 20px;
+			}
+		}
+
+		&-when {
+			margin-top: 100px;
+
+			&__row {
+			}
+
+			&__col-desc {
+			}
+
+			&__col-girls {
+				width: 32%;
+			}
+
+			&__date {
+				padding-top: 40px;
+				font-size: 34px;
+			}
+
+			&__title {
+				margin-top: 15px;
+				font-size: 40px;
+			}
+
+			&__poster {
+				margin-top: 25px;
+				max-width: 45%;
+			}
+		}
+	}
+}
+
+@media (min-width: 1100px) {
+	.halloween-2021 {
+		&__center {
+		}
+
+		&__btn-simple {
+		}
+
+		&__btn-green {
+		}
+
+		&-header {
+			height: 750px;
+
+			&__date {
+			}
+
+			&__title {
+			}
+
+			&__desc {
+				&__text {
+				}
+
+				&__btn {
+				}
+			}
+		}
+
+		&-flashmob {
+			&__title {
+			}
+
+			&__row {
+			}
+
+			&__col-title {
+			}
+
+			&__col-ghost {
+			}
+
+			&__col-desc {
+			}
+
+			&__title-2 {
+			}
+
+			&__desc {
+			}
+		}
+
+		&-program {
+			&__title {
+			}
+
+			&__row {
+			}
+
+			&__col {
+			}
+
+			&__item {
+				&--flip {
+				}
+			}
+
+			&__image {
+				&--l {
+				}
+
+				&--r {
+				}
+			}
+
+			&__desc {
+				&--1 {
+				}
+
+				&--2 {
+				}
+			}
+
+			&__btn {
+			}
+		}
+
+		&-when {
+			&__row {
+			}
+
+			&__col-desc {
+			}
+
+			&__col-girls {
+			}
+
+			&__date {
+			}
+
+			&__title {
+			}
+
+			&__poster {
+			}
+		}
+	}
+}
+
+@media (min-width: 1500px) {
+	.halloween-2021 {
+		&__center {
+		}
+
+		&__btn-simple {
+		}
+
+		&__btn-green {
+		}
+
+		&-header {
+			height: 920px;
+
+			&__date {
+			}
+
+			&__title {
+			}
+
+			&__desc {
+				&__text {
+				}
+
+				&__btn {
+				}
+			}
+		}
+
+		&-flashmob {
+			&__title {
+			}
+
+			&__row {
+			}
+
+			&__col-title {
+			}
+
+			&__col-ghost {
+			}
+
+			&__col-desc {
+			}
+
+			&__title-2 {
+			}
+
+			&__desc {
+			}
+		}
+
+		&-program {
+			&__title {
+			}
+
+			&__row {
+			}
+
+			&__col {
+			}
+
+			&__item {
+				&--flip {
+				}
+			}
+
+			&__image {
+				&--l {
+				}
+
+				&--r {
+				}
+			}
+
+			&__desc {
+				&--1 {
+				}
+
+				&--2 {
+				}
+			}
+
+			&__btn {
+			}
+		}
+
+		&-when {
+			&__row {
+			}
+
+			&__col-desc {
+			}
+
+			&__col-girls {
+			}
+
+			&__date {
+			}
+
+			&__title {
+			}
+
+			&__poster {
+			}
 		}
 	}
 }
