@@ -29,9 +29,14 @@
 }
 
 .halloween-2021 {
+	position: relative;
 	font-family: "LeOsler Rough Reg", sans-serif;
 	line-height: 1;
 	background: #000;
+	background-repeat: no-repeat;
+	background-image: url(../images/halloween-2021/details-bg-mobile.png);
+	background-position: 0 152vw;
+	background-size: 91% auto;
 
 	img {
 		max-width: 100%;
@@ -363,6 +368,10 @@
 
 @media (min-width: 1200px) {
 	.halloween-2021 {
+		background-image: url(../images/halloween-2021/details-bg.png);
+		background-position: 0% 55vw;
+		background-size: 93% auto;
+
 		&__center {
 			padding-right: 3.2vw;
 			padding-left: 3.2vw;
@@ -475,12 +484,19 @@
 
 				&--l {
 					margin-top: -3vw;
-					padding-right: 3vw;
+
+					img {
+						width: 15vw;
+					}
 				}
 
 				&--r {
 					margin-top: -7vw;
 					text-align: right;
+
+					img {
+						width: 13vw;
+					}
 				}
 			}
 
